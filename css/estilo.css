@@ -1,0 +1,71 @@
+body {
+    width: 99vw; 
+    height: 95vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background: #FFFFFF; 
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Sans-serif; 
+
+.container {
+    width:80vw; 
+    height:80vh; 
+    display:flex;
+    box-shadow:5px 5px 10px #DCDCDC; 
+}
+
+.form-image {
+    width: 50vw; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: #df3535; 
+    padding: 15px; 
+}
+
+.form-image img {
+    width: 500px; 
+    height: 500px; 
+}
+
+.form {
+    width: 50vw; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    background-color: #FFFFFF; 
+    padding: 50px;
+}
+
+.form-header {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*estilizando o campo de arquivos*/
+
+
+
+/*Aqui estamos configurando o botão "Cadastrar".*/
+.register-button button {
+    width: 35vw; 
+    margin-top: 20px; 
+    margin-bottom: 30px; 
+    border:none; 
+    background-color: #df3535; 
+    font-size: 15px; 
+    font-weight: bold; 
+    color: #FFFFFF; 
+    padding: 10px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+/*Aqui estamos mudando a cor de fundo do botão quando o mouse passa por ele.*/
+.register-button button:hover{
+    background-color: #ce4d44;
+}
+
+}

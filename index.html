@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/estilo.css">
+    <link href="/js/script.js">
+    <title>Converso para PDF</title>
+
+</head>
+<body>
+    <!--principal div da nossa página, todas as outras estarão dentro dela.-->
+    <div class = "container">
+
+        <div class = "form-image"> <!--Aqui criamos uma div onde será inserida a imagem do formulário.-->
+            <img src = "img/pdf.png" alt = "Imagem do Formulário.">
+        </div>
+
+        <div class = "form"> <!--Aqui criamos a div que conterá todos os elementos do formulário.-->
+            <form action = ""> <!--Aqui utilizamos a tag form própria para a criação de fomrulários.-->
+                <div class = "form-header"> 
+                    <div class = "title">
+                        <h1>De doc para PDF</h1>
+                    </div>
+                </div>
+                
+                <div class = "input-group" > <!--Aqui criamos um div para organizar o grupo de caixas de texto e suas descrições.-->
+                    <div class = "input-box"> <!--Aqui criamos uma div individual para campo de text e seu respectivo título.-->
+                        <label for="formFileMultiple" class="form-label">Escolha os arquivos</label>
+                        <input class="form-control" type="file" id="formFileMultiple" multiple>
+                    </div>     
+                </div>
+                
+                <div class = "register-button"> <!--Aqui criamos uma div para o botão "Cadastrar".-->
+                    <button type = "button" onclick="generatePDF()">Converte</button>
+                </div>
+            </form>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.2/jspdf.debug.js" integrity="sha512-rAzZtAD9aZXKAjivLBjA5+bNjWjTtGVa62S3YFxWNikNkyMcFHxRD3RK7aLYhM0sPoAuV5OaFgF0Wc8TN/R9VQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="assets/js/script.js"></script>
+
+        </div>
+    </div>
+</body>
+</html>
